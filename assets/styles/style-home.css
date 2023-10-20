@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/* Importação de fonte do Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  /* Paleta de cores */
+  --cor01: #101c26;
+  --cor02: #f2b807;
+  --cor03: #f29f05;
+  --cor04: #f27405;
+  --cor05: #f24f13;
+  --cor06: #1dddf2;
+  --cor07: #124c59;
+  --cor08: #f2f2f2;
+  --cor09: #1c1c1c;
+
+  /* Cor do tema */
+  --cor-principal: var(--cor03);
+  --cor-texto: var(--cor09);
+  --cor-titulo: var(var(--cor04));
+
+  --cor-link: var(--cor07);
+  --cor-link-hover: var(--cor03);
+
+  --cor-fundo-claro: var(--cor08);
+  --cor-fundo-escuro: #000000;
+  --cor-fundo: var(--cor-fundo-claro);
+
+  /* Fontes */
+  --fonte-corpo: "DM Sans", Arial, Helvetica, sans-serif;
+  --fonte-titulos: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+/* Configuração geral */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--fonte-corpo);
+}
