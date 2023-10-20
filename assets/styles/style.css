@@ -18,7 +18,7 @@
   /* Cor do tema */
   --cor-principal: var(--cor03);
   --cor-texto: var(--cor09);
-  --cor-titulo: var(var(--cor04));
+  --cor-titulo: var(--cor04);
 
   --cor-link: var(--cor07);
   --cor-link-hover: var(--cor03);
@@ -37,4 +37,41 @@
   margin: 0;
   padding: 0;
   font-family: var(--fonte-corpo);
+}
+
+/* Cabeçalho */
+header {
+  position: fixed;
+  width: 100%;
+
+  background-color: var(--cor01);
+}
+header > div {
+  max-width: 1240px;
+  padding: 7px 10px 0 10px;
+  margin: auto;
+}
+
+/* Logo no header */
+#logo-header {
+  display: flex;
+  flex-direction: row;
+}
+#logo-header img {
+  /* Imagem do logo */
+  max-width: 70px;
+}
+.logo-texto {
+  padding-left: 1px;
+}
+#logo-header h1 {
+  /* Título logo */
+  text-transform: uppercase;
+  font-size: 2em;
+  color: var(--cor08);
+}
+#logo-header p {
+  text-transform: uppercase;
+  font-size: 1em;
+  color: var(--cor06);
 }
