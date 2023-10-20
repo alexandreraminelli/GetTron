@@ -23,7 +23,20 @@
                     <p>A Tecnologia ao Seu Alcance</p>
                 </div>
             </div>
-            <nav></nav>
+            <nav>
+                <ul>
+                    <li><a href="#" id="link-nav-pagina-atual">Início</a></li>
+                    <li><a href="">Loja</a></li>
+                    <li><a href="">Minha conta</a></li>
+                </ul>
+            </nav>
+            <!-- Botões -->
+            <div id="botoes-nav">
+                <!-- Botão de pesquisar -->
+                <button><i class="fi fi-br-search"></i></button>
+                <!-- Botão de pesquisar -->
+                <button><i class="fi fi-br-shopping-cart"></i></button>
+            </div>
         </div>
     </header>
 
