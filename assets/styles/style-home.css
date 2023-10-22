@@ -1,1 +1,9 @@
 @charset "UTF-8";
+
+#capa {
+  background-image: url(../img/capa-inicio.jpg);
+}
+
+#capa img {
+  max-height: 132px;
+}

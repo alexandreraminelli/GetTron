@@ -7,7 +7,7 @@
     <title>GetTron - A Tecnologia ao Seu Alcance</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="assets/logo/gettron-logo.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="assets/logo/gettron-favicon.png" type="image/x-icon" />
     <!-- CSS -->
     <link rel="stylesheet" href="assets/styles/style.css" />
     <link rel="stylesheet" href="assets/styles/style-home.css" />
@@ -42,10 +42,25 @@
 
     <main>
         <!-- Capa do site -->
-        <section id="capa"></section>
+        <section id="capa" class="imagem-fundo fundo-fixo">
+            <div class="mascara">
+                <!-- Logo e título da capa -->
+                <div class="titulo-capa">
+                    <div>
+                        <img src="assets/logo/gettron-logo.png" alt="Logo da GetTron">
+                    </div>
+                    <div class="titulo-capa-texto">
+                        <h1>Get Tron</h1>
+                        <p>A tecnologia ao seu alcance</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer></footer>
+    <footer>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, deleniti!</p>
+    </footer>
 </body>
 
 </html>
