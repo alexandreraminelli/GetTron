@@ -39,7 +39,16 @@
 * {
   margin: 0;
   padding: 0;
+}
+
+body {
   font-family: var(--fonte-corpo);
+  background-color: var(--cor09);
+}
+
+/* TEXTOS */
+h2 {
+  font-size: 3em;
 }
 
 /* Padrões gerais do site */
@@ -164,6 +173,8 @@ main {
 }
 #capa {
   height: calc(100vh - 90px);
+  box-shadow: 0 -10px 10px 0 rgba(0, 0, 0, 0.5) inset;
+  border-radius: 10px 10px 50% 50% / 10px 10px 10% 10%;
 }
 
 #capa h1,
@@ -188,4 +199,37 @@ main {
   justify-content: flex-end;
 }
 
+/* SESSÃO DE PRODUTOS EM DESTAQUE */
+#produtos-em-destaque {
+  color: var(--cor08);
+  text-align: center;
+
+  width: 95vw;
+  margin: auto;
+
+  margin-top: 20px;
+  /* margin: auto; */
+  border-radius: 10px;
+}
+
+#produtos-em-destaque > div {
+  display: flex;
+  flex-wrap: wrap;
+
+  color: var(--cor09);
+}
+#produtos-em-destaque > div > section {
+  background-color: var(--cor08);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 5px;
+  margin: 10px;
+
+  width: 20%;
+}
+#produtos-em-destaque > div > section > img {
+  border-radius: 10px;
+
+  width: 95%;
+}
 /* RODAPÉ */

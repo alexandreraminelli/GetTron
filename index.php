@@ -56,10 +56,107 @@
                 </div>
             </div>
         </section>
+
+        <!-- Lista de categorias -->
+
+        <!-- Principais produtos -->
+        <section id="produtos-em-destaque">
+            <h2>Produtos em Destaque</h2>
+            <div>
+                <section class="produto">
+                    <img src="assets\img\galaxy-s23ultra.png" alt="">
+                    <h3>Galaxy S20</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor error fugit culpa vero aut
+                        excepturi
+                        voluptates atque, animi possimus? Iure, vel velit consequatur qui deserunt possimus nesciunt id!
+                        Dolore, voluptatem!</p>
+                </section>
+                <section class="produto">
+                    <img src="assets\img\galaxy-s23ultra.png" alt="">
+                    <h3>Galaxy S20</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor error fugit culpa vero aut
+                        excepturi
+                        voluptates atque, animi possimus? Iure, vel velit consequatur qui deserunt possimus nesciunt id!
+                        Dolore, voluptatem!</p>
+                </section>
+                <section class="produto">
+                    <img src="assets\img\galaxy-s23ultra.png" alt="">
+                    <h3>Galaxy S20</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor error fugit culpa vero aut
+                        excepturi
+                        voluptates atque, animi possimus? Iure, vel velit consequatur qui deserunt possimus nesciunt id!
+                        Dolore, voluptatem!</p>
+                </section>
+                <section class="produto">
+                    <img src="assets\img\galaxy-s23ultra.png" alt="">
+                    <h3>Galaxy S20</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor error fugit culpa vero aut
+                        excepturi
+                        voluptates atque, animi possimus? Iure, vel velit consequatur qui deserunt possimus nesciunt id!
+                        Dolore, voluptatem!</p>
+                </section>
+                <section class="produto">
+                    <img src="assets\img\galaxy-s23ultra.png" alt="">
+                    <h3>Galaxy S20</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor error fugit culpa vero aut
+                        excepturi
+                        voluptates atque, animi possimus? Iure, vel velit consequatur qui deserunt possimus nesciunt id!
+                        Dolore, voluptatem!</p>
+                </section>
+                <section class="produto">
+                    <img src="assets\img\galaxy-s23ultra.png" alt="">
+                    <h3>Galaxy S20</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor error fugit culpa vero aut
+                        excepturi
+                        voluptates atque, animi possimus? Iure, vel velit consequatur qui deserunt possimus nesciunt id!
+                        Dolore, voluptatem!</p>
+                </section>
+                <section class="produto">
+                    <img src="assets\img\galaxy-s23ultra.png" alt="">
+                    <h3>Galaxy S20</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor error fugit culpa vero aut
+                        excepturi
+                        voluptates atque, animi possimus? Iure, vel velit consequatur qui deserunt possimus nesciunt id!
+                        Dolore, voluptatem!</p>
+                </section>
+                <section class="produto">
+                    <img src="assets\img\galaxy-s23ultra.png" alt="">
+                    <h3>Galaxy S20</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor error fugit culpa vero aut
+                        excepturi
+                        voluptates atque, animi possimus? Iure, vel velit consequatur qui deserunt possimus nesciunt id!
+                        Dolore, voluptatem!</p>
+                </section>
+                <section class="produto">
+                    <img src="assets\img\galaxy-s23ultra.png" alt="">
+                    <h3>Galaxy S20</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor error fugit culpa vero aut
+                        excepturi
+                        voluptates atque, animi possimus? Iure, vel velit consequatur qui deserunt possimus nesciunt id!
+                        Dolore, voluptatem!</p>
+                </section>
+                <section class="produto">
+                    <img src="assets\img\galaxy-s23ultra.png" alt="">
+                    <h3>Galaxy S20</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor error fugit culpa vero aut
+                        excepturi
+                        voluptates atque, animi possimus? Iure, vel velit consequatur qui deserunt possimus nesciunt id!
+                        Dolore, voluptatem!</p>
+                </section>
+                <section class="produto">
+                    <img src="assets\img\galaxy-s23ultra.png" alt="">
+                    <h3>Galaxy S20</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor error fugit culpa vero aut
+                        excepturi
+                        voluptates atque, animi possimus? Iure, vel velit consequatur qui deserunt possimus nesciunt id!
+                        Dolore, voluptatem!</p>
+                </section>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, deleniti!</p>
+        <p>GetTron</p>
     </footer>
 </body>
 
