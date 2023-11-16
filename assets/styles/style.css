@@ -215,6 +215,7 @@ main {
 #produtos-em-destaque > div {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 
   color: var(--cor09);
 }
@@ -227,9 +228,36 @@ main {
 
   width: 20%;
 }
+/* Imagem */
 #produtos-em-destaque > div > section > img {
   border-radius: 10px;
 
-  width: 95%;
+  width: 100%;
+}
+/* Nome e descrição */
+#produtos-em-destaque > div > section > h3,
+#produtos-em-destaque > div > section > p {
+  margin: 5px;
+}
+#produtos-em-destaque > div > section > h3 {
+  font-size: 1.5em;
+}
+#produtos-em-destaque > div > section > p {
+  font-size: 1.1em;
+  text-align: justify;
+}
+
+/* Botão de comprar */
+#produtos-em-destaque > div > section > button {
+  font-size: 1.2em;
+
+  margin: 5px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--cor03);
+}
+#produtos-em-destaque > div > section > button:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 /* RODAPÉ */
