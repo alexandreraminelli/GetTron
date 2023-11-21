@@ -63,87 +63,22 @@
         <section id="produtos-em-destaque">
             <h2>Produtos em Destaque</h2>
             <div>
-                <section class="produto">
-                    <img src="assets\img\galaxy-s23ultra.png" alt="">
-                    <h3>Galaxy S20</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor error fugit culpa vero aut
-                        excepturi
-                        voluptates atque, animi possimus? Iure, vel velit consequatur qui deserunt possimus nesciunt id!
-                        Dolore, voluptatem!</p>
-                    <button>R$ 50,00</button>
-                </section>
-                <section class="produto">
-                    <img src="assets\img\galaxy-s23ultra.png" alt="">
-                    <h3>Galaxy S20</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor error fugit culpa vero aut
-                        excepturi
-                        voluptates atque, animi possimus? Iure, vel velit consequatur qui deserunt possimus nesciunt id!
-                        Dolore, voluptatem!</p>
-                    <button>R$ 50,00</button>
-                </section>
-                <section class="produto">
-                    <img src="assets\img\galaxy-s23ultra.png" alt="">
-                    <h3>Galaxy S20</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor error fugit culpa vero aut
-                        excepturi
-                        voluptates atque, animi possimus? Iure, vel velit consequatur qui deserunt possimus nesciunt id!
-                        Dolore, voluptatem!</p>
-                    <button>R$ 50,00</button>
-                </section>
-                <section class="produto">
-                    <img src="assets\img\galaxy-s23ultra.png" alt="">
-                    <h3>Galaxy S20</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor error fugit culpa vero aut
-                        excepturi
-                        voluptates atque, animi possimus? Iure, vel velit consequatur qui deserunt possimus nesciunt id!
-                        Dolore, voluptatem!</p>
-                    <button>R$ 50,00</button>
-                </section>
-                <section class="produto">
-                    <img src="assets\img\galaxy-s23ultra.png" alt="">
-                    <h3>Galaxy S20</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor error fugit culpa vero aut
-                        excepturi
-                        voluptates atque, animi possimus? Iure, vel velit consequatur qui deserunt possimus nesciunt id!
-                        Dolore, voluptatem!</p>
-                    <button>R$ 50,00</button>
-                </section>
-                <section class="produto">
-                    <img src="assets\img\galaxy-s23ultra.png" alt="">
-                    <h3>Galaxy S20</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor error fugit culpa vero aut
-                        excepturi
-                        voluptates atque, animi possimus? Iure, vel velit consequatur qui deserunt possimus nesciunt id!
-                        Dolore, voluptatem!</p>
-                    <button>R$ 50,00</button>
-                </section>
-                <section class="produto">
-                    <img src="assets\img\galaxy-s23ultra.png" alt="">
-                    <h3>Galaxy S20</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor error fugit culpa vero aut
-                        excepturi
-                        voluptates atque, animi possimus? Iure, vel velit consequatur qui deserunt possimus nesciunt id!
-                        Dolore, voluptatem!</p>
-                    <button>R$ 50,00</button>
-                </section>
-                <section class="produto">
-                    <img src="assets\img\galaxy-s23ultra.png" alt="">
-                    <h3>Galaxy S20</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor error fugit culpa vero aut
-                        excepturi
-                        voluptates atque, animi possimus? Iure, vel velit consequatur qui deserunt possimus nesciunt id!
-                        Dolore, voluptatem!</p>
-                    <button>R$ 50,00</button>
-                </section>
-                <section class="produto">
-                    <img src="assets\img\galaxy-s23ultra.png" alt="">
-                    <h3>Galaxy S20</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor error fugit culpa vero aut
-                        excepturi
-                        voluptates atque, animi possimus? Iure, vel velit consequatur qui deserunt possimus nesciunt id!
-                        Dolore, voluptatem!</p>
-                    <button>R$ 50,00</button>
-                </section>
+                <?php
+                $base = mysqli_connect('localhost', 'root', '', 'gettron') or die("erro de conexão");
+
+                $regra1 = "SELECT * FROM produtos ORDER BY nome_produto";
+                $res = mysqli_query($base, $regra1);
+
+                while ($mostrar = mysqli_fetch_array($res)) {
+                    echo "
+                    <section class=\"produto\">
+                        <img src=" . $mostrar['img_produto'] . " alt=\"\">
+                        <h3>" . $mostrar['nome_produto'] . "</h3>
+                        <p>" . $mostrar['descricao_produto'] . "</p>
+                    <button>" . $mostrar['preco_produto'] . "</button>
+                </section>";
+                }
+                ?>
 
             </div>
         </section>
