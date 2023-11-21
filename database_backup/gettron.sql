@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 16/11/2023 às 13:55
+-- Tempo de geração: 21/11/2023 às 20:20
 -- Versão do servidor: 10.4.28-MariaDB
 -- Versão do PHP: 8.2.4
 
@@ -53,7 +53,8 @@ CREATE TABLE `produtos` (
 --
 
 INSERT INTO `produtos` (`ID_produto`, `nome_produto`, `descricao_produto`, `img_produto`, `preco_produto`) VALUES
-(0, 'Galaxy S23 Ultra', 'O Galaxy S23 Ultra é o smartphone mais inovador e ecológico da Samsung, com um design simétrico feito com materiais reciclados e conscientes. Ele possui uma tela de 6.8 polegadas com resolução Quad HD+ e taxa de atualização variável de 1 a 120 Hz, que oferece uma experiência visual imersiva e fluida. O Galaxy S23 Ultra também se destaca pela sua câmera traseira de 200 megapixels, que permite tirar fotos fantásticas com uma resolução de 12000x9000 pixels e gravar vídeos em 8K. Além disso, ele conta com a S Pen integrada, que facilita a produtividade, a criatividade e a expressão do usuário. O Galaxy S23 Ultra é o melhor celular top de linha Android de 2023, com um desempenho impressionante, uma bateria duradoura e outras tecnologias avançadas.', 'assets\\img\\galaxy-s23ultra.png', 9499);
+(0, 'Galaxy S23 Ultra', 'O Galaxy S23 Ultra é o smartphone mais avançado e sustentável da Samsung, construído com materiais reciclados. Ele tem uma tela de 6.8 polegadas Quad HD+ com taxa de atualização variável de 1 a 120 Hz, proporcionando uma experiência visual imersiva. Destaca-se pela câmera traseira de 200 megapixels, que tira fotos de alta resolução e grava vídeos em 8K. Além disso, possui a S Pen integrada para aumentar a produtividade e a criatividade do usuário. É considerado o melhor celular Android de 2023, com alto desempenho, bateria duradoura e tecnologias avançadas.', 'assets\\img\\galaxy-s23ultra.png', 9499),
+(1, 'iPhone 15 Pro Max', 'O iPhone 15 Pro Max é um smartphone premium da Apple com um design em titânio e uma tela OLED Super Retina XDR de 6,7 polegadas. Equipado com o chip A17 Pro e uma bateria de 4422 mAh, ele oferece desempenho excepcional. Seu sistema de câmera Pro inclui uma grande angular de 48 MP, uma ultra-angular de 12 MP e duas teleobjetivas de 12 MP. Resistente à água e à poeira, está disponível em várias capacidades de armazenamento, de 128 GB a 1 TB.', 'assets\\img\\iphone-15-promax.jpg', 11000);
 
 --
 -- Índices para tabelas despejadas

@@ -8,6 +8,7 @@
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/logo/gettron-favicon.png" type="image/x-icon" />
+
     <!-- CSS -->
     <link rel="stylesheet" href="assets/styles/style.css" />
     <link rel="stylesheet" href="assets/styles/style-home.css" />
@@ -33,9 +34,11 @@
             <!-- Botões -->
             <div id="botoes-nav">
                 <!-- Botão de pesquisar -->
-                <button><i class="fi fi-br-search"></i></button>
+                <button><a href=""><i class="fi fi-br-search"></i></a></button>
+                <!-- Ícone de perfil -->
+                <button><a href=""><i class="fi fi-ss-user"></i></a></button>
                 <!-- Botão de pesquisar -->
-                <button><i class="fi fi-br-shopping-cart"></i></button>
+                <button><a href=""><i class="fi fi-br-shopping-cart"></i></a></button>
             </div>
         </div>
     </header>
@@ -75,7 +78,7 @@
                         <img src=" . $mostrar['img_produto'] . " alt=\"\">
                         <h3>" . $mostrar['nome_produto'] . "</h3>
                         <p>" . $mostrar['descricao_produto'] . "</p>
-                    <button>" . $mostrar['preco_produto'] . "</button>
+                    <button>R$" . number_format($mostrar['preco_produto'], 2, ",", ".") . "</button>
                 </section>";
                 }
                 ?>
