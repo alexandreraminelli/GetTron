@@ -11,7 +11,10 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="assets/styles/style.css" />
-    <link rel="stylesheet" href="assets/styles/style-home.css" />
+    <link rel="stylesheet" href="assets/styles/style-login.css" />
+
+    <!-- Javascript -->
+    <script src="assets/scripts/login.js"></script>
 </head>
 
 <body>
@@ -42,6 +45,38 @@
             </div>
         </div>
     </header>
+
+    <main>
+        <section id="selecionar-conta">
+            <button>
+                <i class="fi fi-ss-user"></i>Entrar
+            </button>
+            <button>
+                <i class="fi fi-ss-user-add"></i>Cadastro
+            </button>
+        </section>
+
+        <section id="entrar">
+            <form action="minha-conta.php" method="post">
+                <div class="campos">
+                    <div class="campo">
+                        <label for="usuario">Email</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="campo">
+                        <label for="senha">Senha</label>
+                        <input type="password" name="senha" id="senha" required>
+                    </div>
+                </div>
+
+                <div class="enviar">
+                    <input type="submit" value="Entrar">
+                    <input type="reset" value="Limpar">
+                </div>
+            </form>
+        </section>
+
+    </main>
 
 </body>
 

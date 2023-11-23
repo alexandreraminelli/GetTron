@@ -28,7 +28,7 @@
                 <ul>
                     <li><a href="#" id="link-nav-pagina-atual">Início</a></li>
                     <li><a href="">Loja</a></li>
-                    <li><a href="">Minha conta</a></li>
+                    <li><a href="conta.php">Minha conta</a></li>
                 </ul>
             </nav>
             <!-- Botões -->
@@ -36,7 +36,7 @@
                 <!-- Botão de pesquisar -->
                 <button><a href=""><i class="fi fi-br-search"></i></a></button>
                 <!-- Ícone de perfil -->
-                <button><a href=""><i class="fi fi-ss-user"></i></a></button>
+                <button><a href="conta.php"><i class="fi fi-ss-user"></i></a></button>
                 <!-- Botão de pesquisar -->
                 <button><a href=""><i class="fi fi-br-shopping-cart"></i></a></button>
             </div>
