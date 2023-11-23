@@ -39,18 +39,31 @@ body {
   color: var(--cor04);
 }
 
-#entrar {
+/* SESSÕES   */
+#entrar,
+#criar-conta {
   margin-left: 10vw;
   margin-right: 10vw;
   background-color: rgba(242, 242, 242, 0.25);
   padding: 30px;
   border-radius: 10px;
+  margin-bottom: 50px;
 
   display: flex;
   justify-content: center;
+  flex-direction: column;
+}
+#entrar h2,
+#criar-conta h2 {
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--cor09);
 }
 
 /* FORMULÁRIOS */
+form {
+  margin: auto;
+}
 
 form input[type="submit"],
 form input[type="reset"] {
@@ -85,6 +98,8 @@ input[type="password"] {
   padding: 2px;
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.75);
+  width: 350px;
+  text-align: center;
 }
 
 form div.campo {

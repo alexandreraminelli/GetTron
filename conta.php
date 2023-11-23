@@ -57,6 +57,7 @@
         </section>
 
         <section id="entrar">
+            <h2>Login</h2>
             <form action="minha-conta.php" method="post">
                 <div class="campos">
                     <div class="campo">
@@ -69,6 +70,34 @@
                     </div>
                 </div>
 
+                <div class="enviar">
+                    <input type="submit" value="Entrar">
+                    <input type="reset" value="Limpar">
+                </div>
+            </form>
+        </section>
+
+        <section id="criar-conta">
+            <h2>Criar Conta</h2>
+            <form action="<?= $_SERVER["PHP_SELF"] ?>" method="post">
+                <div class="campos">
+                    <div class="campo">
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome" required autocomplete="name">
+                    </div>
+                    <div class="campo">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required autocomplete="email">
+                    </div>
+                    <div class="campo">
+                        <label for="endereco">Endereço</label>
+                        <input type="text" name="endereco" id="endereco" required>
+                    </div>
+                    <div class="campo">
+                        <label for="senha">Senha</label>
+                        <input type="password" name="senha" id="senha" required>
+                    </div>
+                </div>
                 <div class="enviar">
                     <input type="submit" value="Entrar">
                     <input type="reset" value="Limpar">
