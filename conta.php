@@ -105,18 +105,18 @@
     </main>
     <!-- Javascript -->
     <script>
-    let entrar = window.document.getElementById("entrar")
-    let criarConta = window.document.getElementById("criar-conta")
+        let entrar = window.document.getElementById("entrar")
+        let criarConta = window.document.getElementById("criar-conta")
 
-    function mostrarEntrar() {
-        entrar.style.display = "flex"
-        criarConta.style.display = "none"
-    }
+        function mostrarEntrar() {
+            entrar.style.display = "flex"
+            criarConta.style.display = "none"
+        }
 
-    function mostrarCriarConta() {
-        entrar.style.display = "none"
-        criarConta.style.display = "flex";
-    }
+        function mostrarCriarConta() {
+            entrar.style.display = "none"
+            criarConta.style.display = "flex";
+        }
     </script>
 
 </body>
