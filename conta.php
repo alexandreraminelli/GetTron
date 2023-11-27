@@ -44,6 +44,7 @@
     </header>
 
     <main>
+        <!-- Botões para escolher a conta -->
         <section id="selecionar-conta">
             <button onclick="mostrarEntrar()">
                 <i class="fi fi-ss-user"></i>Entrar
@@ -53,6 +54,7 @@
             </button>
         </section>
 
+        <!-- Form de login -->
         <section id="entrar">
             <h2>Login</h2>
             <form action="minha-conta.php" method="post">
@@ -74,6 +76,7 @@
             </form>
         </section>
 
+        <!-- Criar Conta -->
         <section id="criar-conta">
             <h2>Criar Conta</h2>
             <form action="<?= $_SERVER["PHP_SELF"] ?>" method="post">
@@ -102,7 +105,36 @@
             </form>
         </section>
 
+        <?php
+        // Arquivo de conexão
+        require_once 'conexao.php';
+
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            // Verifica se o formulário foi submetido
+            if (isset($_POST['nome'], $_POST['email'], $_POST['endereco'], $_POST['senha'])) {
+                // Obtém os valores do formulário
+                $nome = $_POST['nome'];
+                $email = $_POST['email'];
+                $endereco = $_POST['endereco'];
+                $senha = $_POST['senha'];
+
+                // Prepara e executa a query para inserir os dados na tabela 'clientes'
+                $query = "INSERT INTO clientes (nome, email, endereco, senha) VALUES ('$nome', '$email', '$endereco', '$senha')";
+
+                if (mysqli_query($conexao, $query)) {
+                    echo "Dados cadastrados com sucesso!";
+                } else {
+                    echo "Erro ao cadastrar os dados: " . mysqli_error($conexao);
+                }
+            } else {
+                echo "Por favor, preencha todos os campos do formulário.";
+            }
+        }
+        ?>
+
+
     </main>
+
     <!-- Javascript -->
     <script>
         let entrar = window.document.getElementById("entrar")
