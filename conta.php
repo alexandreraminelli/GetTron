@@ -12,9 +12,6 @@
     <!-- CSS -->
     <link rel="stylesheet" href="assets/styles/style.css" />
     <link rel="stylesheet" href="assets/styles/style-login.css" />
-
-    <!-- Javascript -->
-    <script src="assets/scripts/login.js"></script>
 </head>
 
 <body>
@@ -48,10 +45,10 @@
 
     <main>
         <section id="selecionar-conta">
-            <button>
+            <button onclick="mostrarEntrar()">
                 <i class="fi fi-ss-user"></i>Entrar
             </button>
-            <button>
+            <button onclick="mostrarCriarConta()">
                 <i class="fi fi-ss-user-add"></i>Cadastro
             </button>
         </section>
@@ -62,11 +59,11 @@
                 <div class="campos">
                     <div class="campo">
                         <label for="usuario">Email</label>
-                        <input type="email" name="email" id="email" required>
+                        <input type="email" name="email" id="email-login" required>
                     </div>
                     <div class="campo">
                         <label for="senha">Senha</label>
-                        <input type="password" name="senha" id="senha" required>
+                        <input type="password" name="senha" id="senha-login" required>
                     </div>
                 </div>
 
@@ -83,19 +80,19 @@
                 <div class="campos">
                     <div class="campo">
                         <label for="nome">Nome</label>
-                        <input type="text" name="nome" id="nome" required autocomplete="name">
+                        <input type="text" name="nome" id="nome-criar" required autocomplete="name">
                     </div>
                     <div class="campo">
                         <label for="email">Email</label>
-                        <input type="email" name="email" id="email" required autocomplete="email">
+                        <input type="email" name="email" id="email-criar" required autocomplete="email">
                     </div>
                     <div class="campo">
                         <label for="endereco">Endereço</label>
-                        <input type="text" name="endereco" id="endereco" required>
+                        <input type="text" name="endereco" id="endereco-criar" required>
                     </div>
                     <div class="campo">
                         <label for="senha">Senha</label>
-                        <input type="password" name="senha" id="senha" required>
+                        <input type="password" name="senha" id="senha-criar" required>
                     </div>
                 </div>
                 <div class="enviar">
@@ -106,6 +103,21 @@
         </section>
 
     </main>
+    <!-- Javascript -->
+    <script>
+    let entrar = window.document.getElementById("entrar")
+    let criarConta = window.document.getElementById("criar-conta")
+
+    function mostrarEntrar() {
+        entrar.style.display = "flex"
+        criarConta.style.display = "none"
+    }
+
+    function mostrarCriarConta() {
+        entrar.style.display = "none"
+        criarConta.style.display = "flex";
+    }
+    </script>
 
 </body>
 
