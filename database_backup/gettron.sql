@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 21/11/2023 às 20:20
--- Versão do servidor: 10.4.28-MariaDB
--- Versão do PHP: 8.2.4
+-- Tempo de geração: 30/11/2023 às 12:20
+-- Versão do servidor: 10.4.32-MariaDB
+-- Versão do PHP: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `clientes` (
-  `ID_Cliente` int(11) NOT NULL DEFAULT current_timestamp(),
+  `ID_Cliente` int(11) NOT NULL,
   `Nome` varchar(35) NOT NULL,
   `Email` text NOT NULL,
   `Endereço` text NOT NULL
@@ -53,8 +53,8 @@ CREATE TABLE `produtos` (
 --
 
 INSERT INTO `produtos` (`ID_produto`, `nome_produto`, `descricao_produto`, `img_produto`, `preco_produto`) VALUES
-(0, 'Galaxy S23 Ultra', 'O Galaxy S23 Ultra é o smartphone mais avançado e sustentável da Samsung, construído com materiais reciclados. Ele tem uma tela de 6.8 polegadas Quad HD+ com taxa de atualização variável de 1 a 120 Hz, proporcionando uma experiência visual imersiva. Destaca-se pela câmera traseira de 200 megapixels, que tira fotos de alta resolução e grava vídeos em 8K. Além disso, possui a S Pen integrada para aumentar a produtividade e a criatividade do usuário. É considerado o melhor celular Android de 2023, com alto desempenho, bateria duradoura e tecnologias avançadas.', 'assets\\img\\galaxy-s23ultra.png', 9499),
-(1, 'iPhone 15 Pro Max', 'O iPhone 15 Pro Max é um smartphone premium da Apple com um design em titânio e uma tela OLED Super Retina XDR de 6,7 polegadas. Equipado com o chip A17 Pro e uma bateria de 4422 mAh, ele oferece desempenho excepcional. Seu sistema de câmera Pro inclui uma grande angular de 48 MP, uma ultra-angular de 12 MP e duas teleobjetivas de 12 MP. Resistente à água e à poeira, está disponível em várias capacidades de armazenamento, de 128 GB a 1 TB.', 'assets\\img\\iphone-15-promax.jpg', 11000);
+(2, 'Galaxy S23 Ultra', 'O Galaxy S23 Ultra é o smartphone mais avançado e sustentável da Samsung, construído com materiais reciclados. Ele tem uma tela de 6.8 polegadas Quad HD+ com taxa de atualização variável de 1 a 120 Hz, proporcionando uma experiência visual imersiva. Destaca-se pela câmera traseira de 200 megapixels, que tira fotos de alta resolução e grava vídeos em 8K. Além disso, possui a S Pen integrada para aumentar a produtividade e a criatividade do usuário. É considerado o melhor celular Android de 2023, com alto desempenho, bateria duradoura e tecnologias avançadas.', 'assets\\img\\galaxy-s23ultra.png', 9499),
+(3, 'iPhone 15 Pro Max', 'O iPhone 15 Pro Max é um smartphone premium da Apple com um design em titânio e uma tela OLED Super Retina XDR de 6,7 polegadas. Equipado com o chip A17 Pro e uma bateria de 4422 mAh, ele oferece desempenho excepcional. Seu sistema de câmera Pro inclui uma grande angular de 48 MP, uma ultra-angular de 12 MP e duas teleobjetivas de 12 MP. Resistente à água e à poeira, está disponível em várias capacidades de armazenamento, de 128 GB a 1 TB.', 'assets\\img\\iphone-15-promax.jpg', 11000);
 
 --
 -- Índices para tabelas despejadas
@@ -72,6 +72,22 @@ ALTER TABLE `clientes`
 --
 ALTER TABLE `produtos`
   ADD PRIMARY KEY (`ID_produto`);
+
+--
+-- AUTO_INCREMENT para tabelas despejadas
+--
+
+--
+-- AUTO_INCREMENT de tabela `clientes`
+--
+ALTER TABLE `clientes`
+  MODIFY `ID_Cliente` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT de tabela `produtos`
+--
+ALTER TABLE `produtos`
+  MODIFY `ID_produto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
