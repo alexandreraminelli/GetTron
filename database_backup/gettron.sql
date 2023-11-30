@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 30/11/2023 às 12:20
+-- Tempo de geração: 30/11/2023 às 12:27
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -28,11 +28,19 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `clientes` (
-  `ID_Cliente` int(11) NOT NULL,
-  `Nome` varchar(35) NOT NULL,
-  `Email` text NOT NULL,
-  `Endereço` text NOT NULL
+  `id_cliente` int(11) NOT NULL,
+  `nome` varchar(35) NOT NULL,
+  `email` text NOT NULL,
+  `endereco` text NOT NULL,
+  `senha` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Despejando dados para a tabela `clientes`
+--
+
+INSERT INTO `clientes` (`id_cliente`, `nome`, `email`, `endereco`, `senha`) VALUES
+(2, 'Alexandre Raminelli Junior', 'alexandre.raminelli9491@gmail.com', 'Av. Lauro Gomes 111, torre 1 apto 1', '234323');
 
 -- --------------------------------------------------------
 
@@ -64,8 +72,8 @@ INSERT INTO `produtos` (`ID_produto`, `nome_produto`, `descricao_produto`, `img_
 -- Índices de tabela `clientes`
 --
 ALTER TABLE `clientes`
-  ADD PRIMARY KEY (`ID_Cliente`),
-  ADD UNIQUE KEY `Email` (`Email`) USING HASH;
+  ADD PRIMARY KEY (`id_cliente`),
+  ADD UNIQUE KEY `Email` (`email`) USING HASH;
 
 --
 -- Índices de tabela `produtos`
@@ -81,7 +89,7 @@ ALTER TABLE `produtos`
 -- AUTO_INCREMENT de tabela `clientes`
 --
 ALTER TABLE `clientes`
-  MODIFY `ID_Cliente` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_cliente` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de tabela `produtos`
