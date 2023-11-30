@@ -121,12 +121,12 @@
                 $query = "INSERT INTO clientes (nome, email, endereco, senha) VALUES ('$nome', '$email', '$endereco', '$senha')";
 
                 if (mysqli_query($conexao, $query)) {
-                    echo "Dados cadastrados com sucesso!";
+                    echo "<section id=\"resultado\"><p>Dados cadastrados com sucesso!</p></section>";
                 } else {
-                    echo "Erro ao cadastrar os dados: " . mysqli_error($conexao);
+                    echo "<section id=\"resultado\">Erro ao cadastrar os dados: " . mysqli_error($conexao) . "</section>";
                 }
             } else {
-                echo "Por favor, preencha todos os campos do formulário.";
+                echo "<section id=\"resultado\">Por favor, preencha todos os campos do formulário.</section>";
             }
         }
         ?>

@@ -41,22 +41,32 @@ body {
 
 /* SESSÕES   */
 #entrar,
-#criar-conta {
+#criar-conta,
+#resultado {
   margin-left: 10vw;
   margin-right: 10vw;
   background-color: rgba(242, 242, 242, 0.25);
   padding: 30px;
   border-radius: 10px;
 
-  display: none;
   justify-content: center;
   flex-direction: column;
+
+  text-align: center;
+}
+#entrar,
+#criar-conta {
+  display: none;
 }
 #entrar h2,
 #criar-conta h2 {
   text-align: center;
   text-transform: uppercase;
   color: var(--cor09);
+}
+#resultado p {
+  font-weight: bolder;
+  font-size: 2em;
 }
 
 /* FORMULÁRIOS */
