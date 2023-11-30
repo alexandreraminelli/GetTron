@@ -27,7 +27,6 @@
             <nav>
                 <ul>
                     <li><a href="#" id="link-nav-pagina-atual">Início</a></li>
-                    <li><a href="">Loja</a></li>
                     <li><a href="conta.php">Minha conta</a></li>
                 </ul>
             </nav>
